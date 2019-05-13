@@ -32,6 +32,11 @@ class Game extends React.Component {
   }
 
   getWinner () {
+    const results = solutions.map(
+      solution => solution.map(i => this.state.board[i]).join('')
+    );
+    const match = results.find(result => ['XXX', 'OOO'].includes(result));
+    return match && match[0];
   }
 
   isComplete () {
