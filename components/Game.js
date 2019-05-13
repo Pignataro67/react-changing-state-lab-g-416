@@ -40,6 +40,7 @@ class Game extends React.Component {
   }
 
   isComplete () {
+    return this.state.board.every(player => ['X', 'O'].includes(player)) || !!this.getWinner();
   }
 
   render () {
