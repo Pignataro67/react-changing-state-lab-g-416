@@ -8,7 +8,6 @@ class Board extends React.Component {
       <div>
       const fields = board.map((player, index) => <Field key={index} player={player} onClick={onClick.bind(null, index)} />)
     return (
-      <div>
       <div className="board">
         {fields}
         </div>
