@@ -16,6 +16,11 @@ class Game extends React.Component {
   }
 
   handleReset (ev) {
+    ev.preventDefault();
+    this.setState({
+      board: [null, null, null, null, null, null, null, null, null],
+      turn: 'X'
+    });
   }
 
   handleClick (i, ev) {
