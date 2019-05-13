@@ -11,6 +11,7 @@ class Board extends React.Component {
       <div>
       <div className="board">
         {fields}
+        </div>
     );
   }
 }
